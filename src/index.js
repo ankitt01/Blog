@@ -12,3 +12,13 @@ ReactDOM.render(
     </Provider>,
     document.querySelector('#root')
 );
+
+//"General data laoding with redux"
+// Component gets rendered ont o the screen 
+// Component's componentDidMpunt lifecycle method gets called fir time when the app loads
+// we call an action creator from componentDidMount
+// Action creator runs code to make an API request 
+// API respnds with data 
+// Action creator returns an action with fetched data on the payload property 
+// Some reducer sees the action returns the data off the payload 
+// Because we generated new state object redux.react-redux cause our React app to be rerendered
